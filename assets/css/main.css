@@ -19,8 +19,8 @@ canvas, details, embed, figure, figcaption,
 footer, header, hgroup, menu, nav, output, ruby,
 section, summary, time, mark, audio, video {
 	margin: .5;
-	padding: .5;
-	border: .5;
+	padding: 0;
+	border: 0;
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;}
