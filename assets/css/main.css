@@ -280,7 +280,6 @@ input, select, textarea {
 			line-height: 1.75;
 			padding: 1rem 1.5rem;
 			overflow-x: auto;
-			overflow-y: auto;
 		}
 
 	hr {
@@ -934,7 +933,6 @@ input, select, textarea {
 	.table-wrapper {
 		-webkit-overflow-scrolling: touch;
 		overflow-x: auto;
-		overflow-y: auto;
 	}
 
 	table {
@@ -1142,12 +1140,9 @@ input, select, textarea {
 			-ms-transition-delay: 0.75s;
 			transition-delay: 0.75s;
 			background-image: linear-gradient(to top, rgba(19, 21, 25, 0.5), rgba(19, 21, 25, 0.5)), url("../../images/overlay.png");
-			background-size: auto,
- 256px 256px;
-			background-position: center,
- center;
-			background-repeat: no-repeat,
- repeat;
+			background-size: auto, 256px 256px;
+			background-position: center, center;
+			background-repeat: no-repeat, repeat;
 			z-index: 2;
 		}
 
@@ -1323,7 +1318,7 @@ input, select, textarea {
 				transition-delay: 0.25s;
 				padding: 3rem 2rem;
 				max-height: 40rem;
-				overflow: auto;
+				overflow: hidden;
 			}
 
 				#header .content .inner > :last-child {
@@ -1570,7 +1565,7 @@ input, select, textarea {
 				height: 4rem;
 				cursor: pointer;
 				text-indent: 4rem;
-				overflow: auto;
+				overflow: hidden;
 				white-space: nowrap;
 			}
 
