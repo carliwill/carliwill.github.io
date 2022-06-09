@@ -1,0 +1,21 @@
+<div id="primez"></div>
+
+<script id="getprimez" type="javascript/worker">
+// https://stackoverflow.com/a/12287599/343520
+self.addEventListener('message', function getPrimes(e) {
+  const max = e.data
+    var sieve = [], i, j, primes = [];
+    for (i = 2; i <= max; ++i) {
+        if (!sieve[i]) {
+            // i has not been marked -- it is prime
+            self.postMessage(i)
+            primes.push(i);
+            for (j = i << 1; j <= max; j += i) {
+                sieve[j] = true;
+            }
+        }
+    }
+  
+  self.close();
+});
+</script>
